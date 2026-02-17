@@ -1,0 +1,35 @@
+public class StringToInt {
+    public int myAtoi(String s) {
+        s = s.trim();
+        if (s.length() == 0) {
+            return 0;
+        }
+        int sign = 1;
+        int index = 0;
+        if (s.charAt(0) == '-') {
+            sign = -1;
+            index++;
+        } else if (s.charAt(0) == '+') {
+            index++;
+        }
+        long result = 0;
+        while (index < s.length()) {
+            char c = s.charAt(index);
+            if (c < '0' || c > '9') {
+                break;
+            }
+            result = result * 10 + (c - '0');
+            if (result > Integer.MAX_VALUE) {
+                return sign == 1 ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+            }
+            index++;
+        }
+
+        return (int) result * sign;
+    }
+
+    public static void main(String[] args) {
+        StringToInt st = new StringToInt();
+        System.out.println(st.myAtoi(" -042"));
+    }
+}

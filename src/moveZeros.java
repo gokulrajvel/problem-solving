@@ -1,0 +1,21 @@
+public class moveZeros {
+    public void moveZeroes(int[] nums) {
+        int k=0;
+        for(int i=0;i<nums.length;i++){
+            if(nums[i]!=0)
+            {
+                nums[k++]=nums[i];
+            }
+        }
+        for(int i=k;i<nums.length;i++)
+            nums[i]=0;
+    }
+
+    public static void main(String[] args) {
+        moveZeros mz = new moveZeros();
+        int[] arr=new int[]{0,1,0,3,0,5};
+        mz.moveZeroes(arr);
+        for(int value:arr)
+            System.out.print(value+" ");
+    }
+}

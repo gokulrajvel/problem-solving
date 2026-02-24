@@ -1,17 +1,17 @@
 public class reverseVowels {
     public String reverseVowel(String s) {
         int start=0,end=s.length()-1;
-        char[] a=s.toCharArray();
+        char[] arr=s.toCharArray();
         while(start<end){
-            if("aeiouAEIOU".indexOf(a[start]) != -1&&"aeiouAEIOU".indexOf(a[end]) != -1){
-                char temp=a[start];
-                a[start++]=a[end];
-                a[end--]=temp;
+            if("aeiouAEIOU".indexOf(arr[start]) != -1&&"aeiouAEIOU".indexOf(arr[end]) != -1){
+                char temp=arr[start];
+                arr[start++]=arr[end];
+                arr[end--]=temp;
             }
-            else if("aeiouAEIOU".indexOf(a[start]) != -1&&"aeiouAEIOU".indexOf(a[end]) == -1){
+            else if("aeiouAEIOU".indexOf(arr[start]) != -1&&"aeiouAEIOU".indexOf(arr[end]) == -1){
                 end--;
             }
-            else if("aeiouAEIOU".indexOf(a[start]) == -1&&"aeiouAEIOU".indexOf(a[end]) != -1){
+            else if("aeiouAEIOU".indexOf(arr[start]) == -1&&"aeiouAEIOU".indexOf(arr[end]) != -1){
                 start++;
             }
             else{
@@ -19,7 +19,7 @@ public class reverseVowels {
                 end--;
             }
         }
-        return new String(a);
+        return new String(arr);
     }
     public static void main(String[] args) {
         reverseVowels obj=new reverseVowels();

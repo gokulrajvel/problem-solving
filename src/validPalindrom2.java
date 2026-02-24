@@ -22,7 +22,7 @@ public class validPalindrom2 {
         return true;
     }
     public static void main(String[] args) {
-        validPalindrom2 p = new validPalindrom2();
-        System.out.print(p.validPalindrome("abca"));
+        validPalindrom2 obj = new validPalindrom2();
+        System.out.print(obj.validPalindrome("abca"));
     }
 }

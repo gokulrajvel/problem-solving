@@ -3,25 +3,25 @@ import java.util.Scanner;
 public class containerWithMostWater {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt();
-        int[]  arr=new int[n];
-        for(int i=0;i<n;i++){
+        int len=sc.nextInt();
+        int[]  arr=new int[len];
+        for(int i=0;i<len;i++){
             arr[i]=sc.nextInt();
         }
         containerWithMostWater obj=new containerWithMostWater();
         System.out.println(obj.container(arr));
     }
-    public int container(int[]arr){
-        int max=0,i=0,j=arr.length-1;
-        while(i<j){
-            max=Math.max(max,(j-i)*Math.min(arr[i],arr[j]));
-            if(arr[i]<arr[j]){
-                i++;
+    public int container(int[] arr){
+        int maxValue=0,left=0,right=arr.length-1;
+        while(left<right){
+            maxValue=Math.max(maxValue,(right-left)*Math.min(arr[left],arr[right]));
+            if(arr[left]<arr[right]){
+                left++;
             }
             else{
-                j--;
+                right--;
             }
         }
-        return max;
+        return maxValue;
     }
 }

@@ -12,15 +12,15 @@ public class sumInt3 {
                     continue;
                 int left=i+1,right=nums.length-1;
                 while(left<right){
-                    int count=nums[left]+nums[i]+nums[right];
-                    if(count==0){
+                    int sum=nums[left]+nums[i]+nums[right];
+                    if(sum==0){
                         list.add(Arrays.asList(nums[left],nums[i],nums[right]));
                         while(left<right&&nums[left]==nums[left+1])
                             left++;
                         while(left<right&&nums[right]==nums[right-1])
                             right--;
                     }
-                    if(count<0)left++;
+                    if(sum<0)left++;
                     else
                         right--;
                 }

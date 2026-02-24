@@ -37,7 +37,7 @@ class FullTimeEmployee extends Employee {
         this.monthlySalary = monthlySalary;
     }
 
-//    @Override
+    @Override
     public double calculateSalary() {
         return monthlySalary;
     }
@@ -53,7 +53,7 @@ class PartTimeEmployee extends Employee {
         this.hourlyRate = hourlyRate;
     }
 
-//    @Override
+    @Override
     public double calculateSalary() {
         return hoursWorked * hourlyRate;
     }

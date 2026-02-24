@@ -20,7 +20,7 @@ public class validPalindrome {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String str = scan.nextLine();
-        validPalindrome p = new validPalindrome();
-        System.out.println(p.isPalindrome(str));
+        validPalindrome obj = new validPalindrome();
+        System.out.println(obj.isPalindrome(str));
     }
 }

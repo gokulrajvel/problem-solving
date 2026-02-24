@@ -12,7 +12,7 @@ public class removeDuplicates {
         if(nums.length<1)
             return 1;
 
-        int left=1,right=1,val=0;
+        int left=1,right=1;
         while(right<nums.length){
             if(nums[right]!=nums[right-1])
             {

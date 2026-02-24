@@ -7,7 +7,7 @@ public class TrappingRainWater {
         while(start<last){
             if(height[start]<height[last]){
                 if(height[start]>=leftMax)
-                    leftMax=Math.max(leftMax,height[start]);
+                    leftMax=height[start];
                 else
                     result+=leftMax-height[start];
                 start++;

@@ -6,8 +6,8 @@ public class twoSum {
         twoSum add=new twoSum();
         int target=9;
         int[] nums2=add.twosumValue(nums1,target);
-        for(int k:nums2)
-            System.out.print(k+" ");
+        for(int value:nums2)
+            System.out.print(value+" ");
     }
     int[] twosumValue(int[] nums, int target) {
         Arrays.sort(nums);
@@ -15,7 +15,7 @@ public class twoSum {
         int end=nums.length-1;
         while(index<end){
             if(nums[index]+nums[end]==target){
-                return new int[]{nums[index],nums[end]};
+                return new int[]{index,end};
             }
             else if(nums[index]+nums[end]<target){
                 index++;

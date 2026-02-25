@@ -4,6 +4,7 @@ public class bagOfTokens {
         System.out.println(obj.bagOfToken(new int[]{100,200,300,400},200));
     }
     public int bagOfToken(int [] arr,int target){
+        Arrays.sort(arr);
         int left=0,right=arr.length-1;
         int max=0,score=0;
         while(left<=right){

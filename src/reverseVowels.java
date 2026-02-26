@@ -8,10 +8,10 @@ public class reverseVowels {
                 arr[start++]=arr[end];
                 arr[end--]=temp;
             }
-            else if("aeiouAEIOU".indexOf(arr[start]) != -1&&"aeiouAEIOU".indexOf(arr[end]) == -1){
+            else if("aeiouAEIOU".indexOf(arr[start]) != -1){
                 end--;
             }
-            else if("aeiouAEIOU".indexOf(arr[start]) == -1&&"aeiouAEIOU".indexOf(arr[end]) != -1){
+            else if("aeiouAEIOU".indexOf(arr[end]) != -1){
                 start++;
             }
             else{

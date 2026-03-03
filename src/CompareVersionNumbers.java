@@ -19,3 +19,26 @@ public class CompareVersionNumbers {
         System.out.println(obj.compareVersion("1.1.1.1", "1.1.1.1"));
     }
 }
+
+
+
+// int start1 = 0, start2 = 0;
+// int len1 = version1.length(), len2 = version2.length();
+// while (start1 < len1 || start2 < len2) {
+//     int value1 = 0;
+//     while (start1 < len1 && version1.charAt(start1) != '.') {
+//         value1 =value1 * 10 + (version1.charAt(start1) - '0');
+//         start1++;
+//     }
+//     int  value2 = 0;
+//     while (start2 < len2 && version2.charAt(start2) != '.') {
+//         value2 =value2 * 10 + (version2.charAt(start2) - '0');
+//         start2++;
+//     }
+//     if (value1 < value2)
+//         return -1;
+//     if (value1 > value2)
+//         return 1;
+//     start1++;
+//     start2++;
+// }

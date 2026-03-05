@@ -8,26 +8,28 @@ public class Scanner {
     protected String[] stringArray;
 
     protected void setInt() {
-        System.out.println("Enter number: ");
         n = sc.nextInt();
     }
 
     protected void setString() {
-        System.out.println("Enter String: ");
         sc.nextLine();
         str = sc.nextLine();
     }
 
-    protected void setIntArray(int length) {
-        intArray = new int[length];
-        for (int i = 0; i < length; i++) {
+    protected void setIntArray() {
+        System.out.println("Enter Array length: ");
+        n=sc.nextInt();
+        intArray = new int[n];
+        for (int i = 0; i < n; i++) {
             intArray[i] = sc.nextInt();
         }
     }
 
-    protected void setStringArray(int length) {
-        stringArray = new String[length];
-        for (int i = 0; i < length; i++) {
+    protected void setStringArray() {
+        System.out.println("Enter Array length: ");
+        n=sc.nextInt();
+        stringArray = new String[n];
+        for (int i = 0; i < n; i++) {
             stringArray[i] = sc.next();
         }
     }
@@ -41,10 +43,10 @@ public class Scanner {
         return str;
     }
 
-    public int[] getIntArray(int i) {
+    public int[] getIntArray() {
         return intArray;
     }
-    public String[] getStringArray(int i) {
+    public String[] getStringArray() {
         return stringArray;
     }
 
@@ -54,6 +56,18 @@ public class Scanner {
 
     public void print(String str) {
         System.out.println();
+    }
+
+    public void print(String[] strArray) {
+        for (String str : strArray) {
+            System.out.println(str);
+        }
+    }
+
+    public void print(int[] intArray) {
+        for (int n : intArray) {
+            System.out.println(n);
+        }
     }
 }
 

@@ -8,10 +8,13 @@ public class InheritanceMain {
         Scanner sc = new Scaner2();
         int len = sc.getInt();
         sc.print(len);
+        int[] intArray = sc.getIntArray();
+        sc.print(Arrays.toString(intArray));
+        sc.print(intArray);
+
         String str = sc.getString();
         sc.print(str);
-        int[] intArray = sc.getIntArray(5);
-        sc.print(Arrays.toString(intArray));
-        String[] strArray = sc.getStringArray(5);
+        String[] strArray = sc.getStringArray();
+        sc.print(strArray);
     }
 }

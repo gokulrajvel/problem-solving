@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class ZigzagConversion {
@@ -6,8 +7,7 @@ public class ZigzagConversion {
             return s;
         String str = "";
         String[] arr = new String[numRows];
-        for (int i = 0; i < arr.length; i++)
-            arr[i] = "";
+        Arrays.fill(arr, "");
         int index = 0;
         boolean down = true;
         for (char g : s.toCharArray()) {

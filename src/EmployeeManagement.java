@@ -50,6 +50,7 @@ class PartTimeEmployee extends Employee {
         super(id, name);
         this.hoursWorked = hoursWorked;
         this.hourlyRate = hourlyRate;
+//        super
     }
 
     @Override

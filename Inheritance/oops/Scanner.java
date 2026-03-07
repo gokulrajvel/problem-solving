@@ -7,16 +7,16 @@ public class Scanner {
     protected int[] intArray;
     protected String[] stringArray;
 
-    protected void setInt() {
+    public void setInt() {
         n = sc.nextInt();
     }
 
-    protected void setString() {
+    public void setString() {
         sc.nextLine();
         str = sc.nextLine();
     }
 
-    protected void setIntArray() {
+    public void setIntArray() {
         System.out.println("Enter Array length: ");
         n=sc.nextInt();
         intArray = new int[n];
@@ -25,7 +25,7 @@ public class Scanner {
         }
     }
 
-    protected void setStringArray() {
+    public void setStringArray() {
         System.out.println("Enter Array length: ");
         n=sc.nextInt();
         stringArray = new String[n];

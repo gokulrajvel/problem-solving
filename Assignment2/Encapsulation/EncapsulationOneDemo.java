@@ -1,9 +1,10 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import Encapsulation.*;
 
 public class EncapsulationOneDemo {
     public static void main(String[] args) {
-        SmartPhone1 obj = new SmartPhone1();
+        SmartPhone obj = new SmartPhone();
         obj.setBrand("Motorola");
         obj.setModel("G62");
         obj.setStorageCapacity(126);
@@ -33,35 +34,5 @@ public class EncapsulationOneDemo {
                 System.out.println("Enter the Storage to Increase: ");
             }
         }
-    }
-}
-
-class SmartPhone1 {
-    private String brand;
-    private String model;
-    private int storageCapacity;
-
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public void setStorageCapacity(int storageCapacity) {
-        this.storageCapacity = storageCapacity;
-    }
-
-    public String getBrand() {
-        return this.brand;
-    }
-
-    public String getModel() {
-        return this.model;
-    }
-
-    public int getStorageCapacity() {
-        return this.storageCapacity;
     }
 }

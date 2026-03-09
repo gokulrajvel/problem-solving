@@ -1,6 +1,6 @@
 import java.util.Arrays;
 import java.util.Scanner;
-import Encapsulation.*;
+import MobileShop.SmartPhone;
 
 public class EncapsulationOneDemo {
     public static void main(String[] args) {

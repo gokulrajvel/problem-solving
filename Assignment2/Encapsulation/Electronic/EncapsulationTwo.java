@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package Electronic;
 
-import Encapsulation.*;
+import java.util.Scanner;
 
 public class EncapsulationTwo {
     public static void main(String[] args) {

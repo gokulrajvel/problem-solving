@@ -1,4 +1,4 @@
-package Encapsulation;
+package Electronic;
 
 public class WashingMachine extends ElectronicProduct {
     private int warranty = 5;

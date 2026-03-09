@@ -1,5 +1,7 @@
+package MobileShop;
+
 import java.util.Scanner;
-import Encapsulation.*;
+
 public class EncapsulationOne {
     public static void main(String[] args) {
         SmartPhone obj = new SmartPhone();

@@ -1,4 +1,4 @@
-package Inheritance;
+package OnlineOrders;
 
 import java.util.Date;
 

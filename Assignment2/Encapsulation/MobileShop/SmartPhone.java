@@ -1,4 +1,4 @@
-package Encapsulation;
+package MobileShop;
 
 public class SmartPhone {
     private String brand;

@@ -1,4 +1,4 @@
-package Encapsulation;
+package Electronic;
 
 public class ElectronicProduct {
     private String productId;

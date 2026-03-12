@@ -15,6 +15,7 @@ public class LargestNumberAtLeastTwice {
                 secMax=nums[i];
             }
         }
+        int max=Math.sqrt(1.0);
         return (max>=2*secMax)?index:-1;
     }
 }

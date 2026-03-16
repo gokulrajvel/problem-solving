@@ -5,5 +5,3 @@ public class Main {
         obj.calculateSurfaceArea(15);
     }
 }
-
-

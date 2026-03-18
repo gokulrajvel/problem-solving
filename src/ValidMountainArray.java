@@ -1,7 +1,8 @@
 public class ValidMountainArray {
     public static void main(String[] args) {
         ValidMountainArray obj = new ValidMountainArray();
-        System.out.println(obj.checkValidMountainArray(new int[] {0,3,2,1}));
+        var arr=new int[] {0,3,2,1};
+        System.out.println(obj.checkValidMountainArray(arr));
     }
     boolean checkValidMountainArray(int[] arr){
         if(arr.length<3){

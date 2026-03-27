@@ -24,4 +24,7 @@ public interface ScannerService {
     String displayArray(boolean[] arr);
 
     void mergeSort(int[] arr, int left, int right);
+    default void print(){
+        System.out.println("hi");
+    }
 }

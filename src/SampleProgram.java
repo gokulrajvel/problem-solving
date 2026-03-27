@@ -1,4 +1,6 @@
 import com.hackbase.BaseScanner;
+import com.hackbase.ScannerService;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;

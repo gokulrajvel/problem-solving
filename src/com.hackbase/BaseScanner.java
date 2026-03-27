@@ -8,11 +8,12 @@ public class BaseScanner implements ScannerService {
     public int getInt() {
         return Integer.parseInt(sc.nextLine());
     }
-
+    @Override
     public String getString() {
+        ScannerService.super.print();
         return sc.nextLine();
     }
-
+    @Override
     public char getChar() {
         return sc.nextLine().charAt(0);
     }
@@ -25,7 +26,7 @@ public class BaseScanner implements ScannerService {
         sc.nextLine();
         return arr;
     }
-
+    @Override
     public String[] getStringArray(int len) {
         String[] arr = new String[len];
         for (int i = 0; i < len; i++) {
@@ -147,7 +148,8 @@ public class BaseScanner implements ScannerService {
         }
     }
 
-    public ScannerClass getObj() {
-        return this;
-    }
+//    public ScannerClass getObj() {
+//        return this;
+//    }
+
 }

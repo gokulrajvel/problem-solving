@@ -1,6 +1,5 @@
 import oops.*;
 import oops.Scanner;
-
 import java.util.*;
 
 public class InheritanceMain {

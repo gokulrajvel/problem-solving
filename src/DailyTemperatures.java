@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.LinkedList;
 import java.util.Stack;
 
 public class DailyTemperatures {
@@ -16,6 +17,7 @@ public class DailyTemperatures {
             }
             stack.push(i);
         }
+        LinkedList<Integer> list = new LinkedList<>();
         return ans;
     }
 }
